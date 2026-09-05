@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0718">
+  <title>Happy Birthday Ayesha ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- COUNTDOWN SCREEN -->
+    <section id="countdownScreen" class="screen active">
+      <div class="countdown-orb"></div>
+      <p class="tiny-label">A LITTLE SURPRISE FOR</p>
+      <h1 class="intro-title">Someone Special ✨</h1>
+      <div id="countNumber" class="count-number">3</div>
+      <p class="count-sub" id="countSub">Get ready...</p>
+      <div class="loading-line"><span></span></div>
+    </section>
+
+    <!-- START SCREEN -->
+    <section id="startScreen" class="screen">
+      <div id="starLayer"></div>
+      <div id="balloonLayer"></div>
+      <div class="backdrop-photo"></div>
+      <div class="backdrop-overlay"></div>
+
+      <div class="start-content">
+        <div class="sparkle-badge">🎈 ✦ 🎈</div>
+        <div class="small-crown">A TINY SURPRISE</div>
+        <h2 class="script-title">Miss Ayesha</h2>
+        <button id="surpriseBtn" class="surprise-btn">
+          <span class="btn-shine"></span>
+          Click This For Surprise
+          <span class="arrow">→</span>
+        </button>
+        <p class="tap-hint">tap once to begin the music & story</p>
+      </div>
+    </section>
+
+    <!-- BOOK SECTION -->
+    <section id="bookScreen" class="screen">
+      <div class="book-bg-photo"></div>
+      <div class="book-overlay"></div>
+      <div class="ambient-title">A little book, written just for you ✨</div>
+
+      <div id="bookStage" class="book-stage">
+        <div id="book" class="book">
+
+          <div class="book-cover book-front" aria-hidden="true">
+            <div class="cover-ornament">✦</div>
+            <div class="cover-small">A SPECIAL LITTLE BOOK</div>
+            <div class="cover-title">For Ayesha</div>
+            <div class="cover-line"></div>
+            <div class="cover-subtitle">Turn the pages slowly…</div>
+            <div class="cover-flower">❀</div>
+          </div>
+
+          <!-- PAGE 1 -->
+          <div class="book-page page-one">
+            <div class="page-inner">
+              <div class="page-top">PAGE 01 • A BEAUTIFUL MEMORY</div>
+              <div class="photo-frame">
+                <img src="images/ayesha1.jpg" alt="Ayesha photo 1" onerror="this.classList.add('missing')">
+                <div class="photo-fallback">ADD<br>AYESHA1.JPG</div>
+              </div>
+              <h3>Happy Birthday, Ayesha</h3>
+              <p class="page-caption">May your day be filled with the kind of happiness that stays in your heart long after today.</p>
+              <div class="page-number">01</div>
+            </div>
+          </div>
+
+          <!-- PAGE 2 -->
+          <div class="book-page page-two">
+            <div class="page-inner note-page">
+              <div class="page-top">PAGE 02 • A BIRTHDAY NOTE</div>
+              <div class="wax">♡</div>
+              <h3>A little dua for you</h3>
+              <p>
+                On your birthday, I pray that Allah keeps your heart peaceful,
+                your path bright, and your days surrounded by people who truly
+                respect and value you.
+              </p>
+              <p>
+                May every difficult chapter become easier, every sincere wish
+                find a beautiful answer, and every new year of your life bring
+                you closer to the dreams that matter to you.
+              </p>
+              <p>
+                You deserve kindness without conditions, respect without limits,
+                and happiness that feels calm and genuine. May Allah protect you,
+                bless your future, and put barakah in every step you take.
+              </p>
+              <div class="signature">With lots of good wishes ✦</div>
+              <div class="page-number">02</div>
+            </div>
+          </div>
+
+          <!-- PAGE 3 -->
+          <div class="book-page page-three">
+            <div class="page-inner">
+              <div class="page-top">PAGE 03 • ONE MORE MEMORY</div>
+              <div class="photo-frame small">
+                <img src="images/ayesha2.jpg" alt="Ayesha photo 2" onerror="this.classList.add('missing')">
+                <div class="photo-fallback">ADD<br>AYESHA2.JPG</div>
+              </div>
+              <h3>Another little wish ✨</h3>
+              <p class="page-caption">
+                Keep smiling, keep growing, and keep being the person who makes
+                your own story worth remembering.
+              </p>
+              <p class="page-caption">
+                May this new year of your life be gentle with you—and full of
+                moments you will be proud to call yours.
+              </p>
+              <div class="page-number">03</div>
+            </div>
+          </div>
+
+          <div class="book-back" aria-hidden="true">
+            <div class="back-detail"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bookGuide" class="book-guide">
+        <span class="hand-icon">☝</span>
+        <span id="guideText">Use your hand / finger on the right page to flip</span>
+      </div>
+
+      <button id="closeBookBtn" class="hidden-action">Close the book ✦</button>
+    </section>
+
+    <!-- FINAL MESSAGE -->
+    <section id="finalScreen" class="screen">
+      <div id="finalSparkles"></div>
+      <div class="final-photo"></div>
+      <div class="final-overlay"></div>
+
+      <div class="final-card">
+        <div class="final-top">THE LAST PAGE</div>
+        <div class="final-stars">✦ ✧ ★ ✧ ✦</div>
+        <h2>Happy Birthday, Ayesha! 🎂</h2>
+        <div class="gold-line"></div>
+        <p>
+          Today is not just another date on the calendar—it is a reminder that
+          another beautiful year of your life has begun.
+        </p>
+        <p>
+          May Allah fill this year with peace in your heart, strength in your
+          choices, happiness in your little moments, and success in the things
+          you work hard for.
+        </p>
+        <p>
+          Stay kind, stay confident, and keep making memories that make you
+          smile when you look back. I genuinely hope this year is softer,
+          brighter, and better for you in every way.
+        </p>
+        <p class="final-wish">
+          <span>Happy Birthday once again.</span><br>
+          May your coming days be full of beautiful surprises. ✨
+        </p>
+        <div class="final-sign">— From a friend who wishes you well ♡</div>
+      </div>
+    </section>
+
+    <!-- audio starts after the user's button click -->
+    <audio id="birthdaySong" preload="auto" loop>
+      <source src="audio/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
